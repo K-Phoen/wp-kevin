@@ -10,7 +10,7 @@
         </header>
 
         <div itemprop="articleBody"><?php the_content(); ?></div>
-    </div>
+    </article>
     <?php endwhile; ?>
 <?php endif; ?>
 

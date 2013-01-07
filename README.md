@@ -1,6 +1,8 @@
 # Description
 
-Minimalist and responsive WordPress theme using [Foundation grid](http://foundation.zurb.com/). Used on my [Personal Website](http://vincent.jousse.org).
+Minimalist and responsive WordPress theme using [Foundation grid](http://foundation.zurb.com/).
+Used on my [blog](http://blog.kevingomez.fr), this theme was originally build by
+[Vincent Jousse](http://vincent.jousse.org/).
 
 # License
 

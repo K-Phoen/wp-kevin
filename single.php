@@ -2,11 +2,14 @@
 
 <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
-    <div class="twelve columns">
-        <h1><?php the_title(); ?></h1>
-        <div class="postdetails">Posté le <strong><?php the_date(); ?></strong> par <strong><?php the_author(); ?></strong>.</div>
+    <article class="twelve columns" itemscope itemtype="http://schema.org/BlogPosting">
+        <header>
+            <h1 itemprop="headline"><?php the_title(); ?></h1>
+            <div class="postdetails">Posté le <strong itemprop="datePublished" datetime="<?php the_time('c'); ?>"><?php the_date(); ?></strong> par <strong><?php the_author(); ?></strong>.</div>
+            <meta itemprop="dateModified" content="<?php the_modified_time('c'); ?>" />
+        </header>
 
-        <?php the_content(); ?>
+        <div itemprop="articleBody"><?php the_content(); ?></div>
     </div>
     <?php endwhile; ?>
 <?php endif; ?>

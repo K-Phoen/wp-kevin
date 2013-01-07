@@ -1,12 +1,14 @@
 <?php if (have_posts()) : ?>
 <div id="posts">
   <?php while (have_posts()) : the_post(); ?>
-    <div class="twelve columns">
-        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-        <div class="postdetails">Posté le <strong><?php the_date(); ?></strong> dans <?php the_category(', '); ?>.</div>
+    <article class="twelve columns" itemscope itemtype="http://schema.org/BlogPosting">
+        <header>
+            <h2 itemprop="headline"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+            <div class="postdetails">Posté le <strong itemprop="datePublished" datetime="<?php the_time('c'); ?>"><?php the_date(); ?></strong> dans <?php the_category(', '); ?>.</div>
+        </header>
 
         <?php the_excerpt('Lire la suite →'); ?>
-    </div>
+    </article>
   <?php endwhile; ?>
     <div class="six columns">
         <?php next_posts_link("« Entrées plus anciennes"); ?>

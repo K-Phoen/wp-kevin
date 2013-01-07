@@ -1,13 +1,5 @@
 /* Artfully masterminded by ZURB  */
 
-/* --------------------------------------------------
-   Table of Contents
------------------------------------------------------
-:: Shared Styles
-:: Page Name 1
-:: Page Name 2
-*/
-
 
 /* -----------------------------------------
    Shared Styles
@@ -49,7 +41,6 @@ body ul {
     padding-right: 10%;
     font-family: Century Gothic, sans-serif;
 }
-
 
 
 .title {
@@ -150,14 +141,6 @@ body a { color: #4086AA;}
 /* -----------------------------------------
    Page Name 1
 ----------------------------------------- */
-
-
-
-
-/* -----------------------------------------
-   Page Name 2
------------------------------------------ */
-
 
 /* Requires: normalize.css */
 /* Global Reset & Standards ---------------------- */

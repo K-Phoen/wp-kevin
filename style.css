@@ -155,6 +155,12 @@ article .readmore {
     display: block;
 }
 
+article code {
+    border: 1px solid lightgrey;
+    font-weight: normal;
+    background: none;
+}
+
 /* -----------------------------------------
    Page Name 1
 ----------------------------------------- */

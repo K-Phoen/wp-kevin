@@ -6,7 +6,12 @@
 
   <meta name="viewport" content="width=device-width" />
 
-  <title><?php the_title(); ?></title>
+  <title><?php
+    bloginfo('name');
+    if (!(is_home() || is_front_page())) {
+        echo ' &#8211; ' .get_the_title();
+    }
+  ?></title>
 
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 

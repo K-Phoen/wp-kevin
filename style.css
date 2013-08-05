@@ -162,6 +162,103 @@ article code {
 }
 
 /* -----------------------------------------
+   comments
+----------------------------------------- */
+
+#comments {
+    margin-top: 40px;
+}
+
+ul.comment-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul.comment-list .comment-author img {
+    max-width: 100%;
+    border-radius: 5px 5px 5px 5px;
+    margin-right: 10px;
+}
+
+.comment-metadata, .comment-metadata a {
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.says {
+    display: none;
+}
+
+.comment-form-author:after,
+.comment-form-email:after,
+.comment-form-url:after,
+.comment-body:after {
+    clear: both;
+}
+
+.comment-form-author:before,
+.comment-form-author:after,
+.comment-form-email:before,
+.comment-form-email:after,
+.comment-form-url:before,
+.comment-form-url:after,
+.comment-body:before,
+.comment-body:after {
+    content: "";
+    display: table;
+}
+
+.comment-metadata, .comment-awaiting-moderation, .comment-content, .comment-list .reply {
+    float: right;
+    width: 85%;
+    width: -webkit-calc(100% - 100px);
+    width:         calc(100% - 100px);
+}
+
+.comment-list > li {
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.comment-list > li:after,
+.comment-list .children > li:before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+}
+
+.comment-body {
+    padding: 24px 0;
+    position: relative;
+}
+
+.comment-author {
+    float: left;
+    max-width: 74px;
+}
+
+.comment-author .avatar {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.comment-author .fn {
+    word-wrap: break-word;
+}
+
+.comment-author .fn,
+.comment-author .url,
+.comment-reply-link,
+.comment-reply-login {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.comment-list .edit-link {
+    margin-left: 20px;
+}
+
+/* -----------------------------------------
    Page Name 1
 ----------------------------------------- */
 

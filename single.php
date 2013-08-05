@@ -10,6 +10,7 @@
         </header>
 
         <div itemprop="articleBody"><?php the_content(); ?></div>
+        <?php comments_template('/comments.php'); ?>
     </article>
     <?php endwhile; ?>
 <?php endif; ?>

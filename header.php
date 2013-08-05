@@ -17,7 +17,9 @@
         <header class="header">
             <div class="twelve columns">
                 <div class="title"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></div>
+                <?php if (get_bloginfo('description')): ?>
                 <p class="subtitle"><?php bloginfo('description'); ?></p>
+                <?php endif; ?>
                 <hr />
             </div>
         </header>

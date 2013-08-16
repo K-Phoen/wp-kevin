@@ -4,13 +4,13 @@
  * Sets up theme defaults and registers the various WordPress features that
  * the theme supports.
  */
-function wp_vjousse_setup() {
+function wp_kevin_setup() {
     /*
      * Makes Twenty Thirteen available for translation.
      *
      * Translations can be added to the /languages/ directory.
      */
-    load_theme_textdomain('wp_vjousse', get_template_directory() . '/languages');
+    load_theme_textdomain('wp_kevin', get_template_directory() . '/languages');
 
     // Adds RSS feed links to <head> for posts and comments.
     add_theme_support('automatic-feed-links');
@@ -18,7 +18,7 @@ function wp_vjousse_setup() {
     /*
      * Theme specific fonts
      */
-    add_editor_style(array(wp_vjousse_fonts_url()));
+    add_editor_style(array(wp_kevin_fonts_url()));
 
     // Switches default core markup for search form, comment form, and comments
     // to output valid HTML5.
@@ -32,7 +32,7 @@ function wp_vjousse_setup() {
         'aside', 'audio', 'chat', 'gallery', 'image', 'link', 'quote', 'status', 'video'
   ));
 }
-add_action('after_setup_theme', 'wp_vjousse_setup');
+add_action('after_setup_theme', 'wp_kevin_setup');
 
 function new_excerpt_more($more) {
     return ' &hellip; <a href="'. get_permalink() . '" class="readmore">Lire la suite &rarr;</a>';
@@ -47,20 +47,20 @@ add_filter('excerpt_more', 'new_excerpt_more');
  *
  * @return string Font stylesheet or empty string if disabled.
  */
-function wp_vjousse_fonts_url() {
+function wp_kevin_fonts_url() {
     $fonts_url = '';
 
     /* Translators: If there are characters in your language that are not
      * supported by Source Sans Pro, translate this to 'off'. Do not translate
      * into your own language.
      */
-    $source_sans_pro = _x('on', 'Source Sans Pro font: on or off', 'wp_vjousse');
+    $source_sans_pro = _x('on', 'Source Sans Pro font: on or off', 'wp_kevin');
 
     /* Translators: If there are characters in your language that are not
      * supported by Bitter, translate this to 'off'. Do not translate into your
      * own language.
      */
-    $bitter = _x('on', 'Bitter font: on or off', 'wp_vjousse');
+    $bitter = _x('on', 'Bitter font: on or off', 'wp_kevin');
 
     if ('off' !== $source_sans_pro || 'off' !== $bitter) {
         $font_families = array();
@@ -84,8 +84,8 @@ function wp_vjousse_fonts_url() {
 /**
  * Enqueues scripts and styles for front end.
  */
-function wp_vjousse_scripts_styles() {
+function wp_kevin_scripts_styles() {
     // Add Open Sans and Bitter fonts, used in the main stylesheet.
-    wp_enqueue_style('wp_vjousse-fonts', wp_vjousse_fonts_url(), array(), null);
+    wp_enqueue_style('wp_kevin-fonts', wp_kevin_fonts_url(), array(), null);
 }
-add_action('wp_enqueue_scripts', 'wp_vjousse_scripts_styles');
+add_action('wp_enqueue_scripts', 'wp_kevin_scripts_styles');

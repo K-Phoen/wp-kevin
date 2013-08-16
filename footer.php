@@ -10,7 +10,7 @@
         </footer>
 
         <div id="copyright" class="twelve columns">
-            <p>Le code du <a href="https://github.com/K-Phoen/wp-vjousse">theme Wordpress est disponible sur Github</a>.</p>
+            <p>Le code du <a href="https://github.com/K-Phoen/wp-kevin">theme Wordpress est disponible sur Github</a>.</p>
         </div>
     </div>
 <?php wp_footer(); ?>

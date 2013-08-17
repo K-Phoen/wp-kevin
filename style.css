@@ -146,6 +146,7 @@ body a { color: #4086AA;}
 
 .postdetails li {
     display: inline;
+    font-size: 14px;
 }
 
 .postdetails li span {

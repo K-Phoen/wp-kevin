@@ -65,7 +65,7 @@ body ul {
     text-align: center;
     font-style: italic;
     padding-top: 10px;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
 }
 
 body h1 {
@@ -145,7 +145,7 @@ body a { color: #4086AA;}
 }
 
 .postdetails li {
-    float: left;
+    display: inline;
 }
 
 .postdetails li span {

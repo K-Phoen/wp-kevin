@@ -92,3 +92,31 @@ function wp_kevin_scripts_styles() {
     wp_enqueue_style('font-awesome', get_template_directory_uri() . '/css/font-awesome.css', array(), null);
 }
 add_action('wp_enqueue_scripts', 'wp_kevin_scripts_styles');
+
+if ( ! function_exists( 'wp_kevin_entry_meta' ) ) :
+/**
+ * Prints HTML with meta information for current post: categories, tags, permalink, author, and date.
+ *
+ * Create your own wp_kevin_entry_meta() to override in a child theme.
+ *
+ * @return void
+ */
+function wp_kevin_entry_meta() {
+    echo '<ul>';
+
+    // publication date
+    echo sprintf('<li><i class="icon-time"></i> %s <span>/</span></li>', get_the_date());
+
+    // author
+    echo sprintf('<li><i class="icon-user"></i> %s <span>/</span></li>', get_the_author());
+
+    // categories
+    echo sprintf('<li><i class="icon-folder-open"></i> %s <span>/</span></li>', get_the_category_list(__(', ', 'wp_kevin')));
+
+    // comments
+    echo sprintf('<li><i class="icon-comments"></i> <a href="%s">', get_comments_link());
+    comments_number('Aucun commentaire', 'Un commentaire', '%s commentaires');
+    echo '</a></li>';
+    echo '</ul>';
+}
+endif;

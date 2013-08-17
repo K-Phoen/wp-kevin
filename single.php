@@ -5,7 +5,7 @@
     <article class="twelve columns" itemscope itemtype="http://schema.org/BlogPosting">
         <header>
             <h1 itemprop="headline"><?php the_title(); ?></h1>
-            <div class="postdetails">Posté le <strong><meta itemprop="datePublished" content="<?php the_time('c'); ?>" /><?php the_date(); ?></strong> par <strong><?php the_author(); ?></strong>.</div>
+            <div class="postdetails"><?php wp_kevin_entry_meta(); ?></div>
             <meta itemprop="dateModified" content="<?php the_modified_time('c'); ?>" />
         </header>
 

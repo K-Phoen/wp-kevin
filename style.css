@@ -139,6 +139,20 @@ body a { color: #4086AA;}
 }
 }
 
+.postdetails ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.postdetails li {
+    float: left;
+}
+
+.postdetails li span {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 /* -----------------------------------------
    articles
 ----------------------------------------- */

@@ -4,7 +4,14 @@
     <article class="twelve columns" itemscope itemtype="http://schema.org/BlogPosting">
         <header>
             <h2 itemprop="headline"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-            <div class="postdetails">Posté le <strong><meta itemprop="datePublished" content="<?php the_time('c'); ?>" /><?php echo get_the_date(); ?></strong> dans <?php the_category(', '); ?>.</div>
+            <div class="postdetails">
+                <ul>
+                    <li><i class="icon-time"></i> <meta itemprop="datePublished" content="<?php the_time('c'); ?>" /><?php echo get_the_date(); ?> <span>/</span></li>
+                    <li><i class="icon-user"></i> <?php the_author(); ?> <span>/</span></li>
+                    <li><i class="icon-folder-open"></i> <?php the_category(', '); ?> <span>/</span></li>
+                    <li><i class="icon-comments"></i> <a href="<?php comments_link(); ?>"><?php comments_number('Aucun commentaire', 'Un commentaire', '%s commentaires'); ?></a></li>
+                </ul>
+            </div>
             <meta itemprop="dateModified" content="<?php the_modified_time('c'); ?>" />
         </header>
 

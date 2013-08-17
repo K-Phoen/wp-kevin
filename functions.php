@@ -30,7 +30,7 @@ function wp_kevin_setup() {
      */
     add_theme_support('post-formats', array(
         'aside', 'audio', 'chat', 'gallery', 'image', 'link', 'quote', 'status', 'video'
-  ));
+     ));
 }
 add_action('after_setup_theme', 'wp_kevin_setup');
 
@@ -87,5 +87,8 @@ function wp_kevin_fonts_url() {
 function wp_kevin_scripts_styles() {
     // Add Open Sans and Bitter fonts, used in the main stylesheet.
     wp_enqueue_style('wp_kevin-fonts', wp_kevin_fonts_url(), array(), null);
+
+    // Add font-awesome, used in the main stylesheet.
+    wp_enqueue_style('font-awesome', get_template_directory_uri() . '/css/font-awesome.css', array(), null);
 }
 add_action('wp_enqueue_scripts', 'wp_kevin_scripts_styles');

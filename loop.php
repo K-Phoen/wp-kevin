@@ -9,7 +9,7 @@
             <meta itemprop="dateModified" content="<?php the_modified_time('c'); ?>" />
         </header>
 
-        <?php the_excerpt('Lire la suite →'); ?>
+        <?php the_content(); ?>
     </article>
   <?php endwhile; ?>
     <div class="six columns">

@@ -3,8 +3,7 @@
         <footer id="footer" class="twelve columns">
             <ul>
                 <li><a href="<?php echo home_url(); ?>">Accueil</a></li>
-                <li><a href="http://www.kevingomez.fr/a-propos">A propos</a></li>
-                <li><a href="http://www.kevingomez.fr/contact">Contact</a></li>
+                <li><a href="http://www.kevingomez.fr/">A propos</a></li>
                 <?php wp_list_pages('title_li='); ?>
             </ul>
         </footer>
@@ -14,8 +13,8 @@
         </div>
     </div>
 <?php wp_footer(); ?>
-<script type="text/javascript">
 
+<script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-2296753-1']);
   _gaq.push(['_trackPageview']);
@@ -25,7 +24,6 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
 </script>
 </body>
 </html>

@@ -7,10 +7,6 @@
                 <?php wp_list_pages('title_li='); ?>
             </ul>
         </footer>
-
-        <div id="copyright" class="twelve columns">
-            <p>Le code du <a href="https://github.com/K-Phoen/wp-kevin">theme Wordpress est disponible sur Github</a>.</p>
-        </div>
     </div>
 <?php wp_footer(); ?>
 
